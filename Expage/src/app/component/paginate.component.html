@@ -1,0 +1,19 @@
+<table border="1" align="center" style="width: 900px; height: 500px;"> 
+    <thead style="background-color: gray">
+        <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Flag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of result | paginate:{itemsPerPage:5,currentPage:p}">
+            <td>{{x.name}}</td>
+            <td>{{x.capital}}</td>
+            <td>{{x.population}}</td>
+            <td><img height="50px" width="100px" src="{{x.flag}}" alt="image for flag"></td>
+        </tr>
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+    </tbody>
+</table>
