@@ -1,0 +1,25 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="result" style="width: 100%">
+        <ng-container matColumnDef="Name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{element.Name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="City">
+                <th mat-header-cell *matHeaderCellDef>City</th>
+                <td mat-cell *matCellDef="let element">{{element.City}}</td>
+            </ng-container>
+
+
+            <ng-container matColumnDef="Country">
+                    <th mat-header-cell *matHeaderCellDef>Country</th>
+                    <td mat-cell *matCellDef="let element">{{element.Country}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns:displayColumns"></tr>
+
+    </table>
+    <mat-paginator #paginator [pageSize]="5" [length]="result.length" [pageSizeOptions]="[5,10,15]"> </mat-paginator>
+
+</div>
