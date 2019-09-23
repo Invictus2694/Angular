@@ -1,0 +1,35 @@
+
+h2{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.label{
+    color: black;
+}
+table{
+   
+    color: blanchedalmond;
+}
+th{
+    background-image: linear-gradient(rgb(53, 57, 240) ,#FA4083);
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+tr{
+    background-image: linear-gradient(rgba(127, 129, 247, 0.856) ,rgba(245, 139, 178, 0.788));
+    color: black;
+}
+td{
+    font-size: 18px;
+}
+mat-paginator{
+    background-image: linear-gradient(rgb(53, 57, 240) ,#FA4083);
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+
+}
+
